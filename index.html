@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>HTML</title>
+
+    <!-- font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d99978cad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <h3>Speech Text Reader</h3>
+    <button onclick="toggleTextBox()">Toggle Text Box</button>
+    <div class="modal">
+      <i class="fa fa-close	" onclick="toggleTextBox()"></i>
+      <div>Choose voice</div>
+
+      <select></select>
+      <textarea name="" id="txt" class="txt" rows="5">Hi, My name is Ahmad asadi louyeh.</textarea>
+      <button class="controls" id="play" type="submit">Read text</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+h3 {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+
+body,
+.modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal {
+  width: 80vw;
+  color: white;
+  background-color: #222222;
+  padding: 10px;
+  position: absolute;
+  top:50%;
+  translate: 0 50%;
+  transition: 1s ease;
+}
+.modal.hide{
+top:-50%;
+translate: 0 -90%;
+}
+.modal > div {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 100%;
+}
+.fa-close{
+  color: white;
+  align-self: flex-end;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.fa-close:hover{
+  font-weight: bold;
+  scale: 1.1;
+}
+
+
+
+.txt,
+select{
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 5px;
+}
+
+select,button {
+  background-color:lightsalmon;
+}
+button,select{
+cursor: pointer;
+}
+button:active,.fa-close:active{
+  scale: .95;
+}
+button:hover,select:hover{
+  background-color: #e67549 ;
+}
+.txt,
+select,
+button {
+  color: white;
+  margin-block: 6px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* button:first-of-type{
+
+padding: ;
+} */
+.txt{
+  color: black;
+  resize: none;
+}
