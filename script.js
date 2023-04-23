@@ -92,3 +92,21 @@ play.onclick = function (event) {
 voiceSelect.onchange = function () {
   speak();
 };
+function speechThis(text) {
+  const utterThis = new SpeechSynthesisUtterance(text);
+  const selectedOption =
+  voiceSelect.selectedOptions[0].getAttribute("data-name");
+  for (let i = 0; i < voices.length; i++) {
+    if (voices[i].name === selectedOption) {
+      utterThis.voice = voices[i];
+      break;
+    }
+  }
+  synth.speak(utterThis);
+
+  document.getElementById(text).classList.add("shadow");
+
+  utterThis.addEventListener("end", () => {
+    document.getElementById(text).classList.remove("shadow");
+  });
+}

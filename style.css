@@ -16,11 +16,11 @@ h3 {
   padding: 20px;
 }
 
-
 body,
 .modal {
   display: flex;
   flex-direction: column;
+
 }
 
 .modal {
@@ -29,13 +29,13 @@ body,
   background-color: #222222;
   padding: 10px;
   position: absolute;
-  top:50%;
-  translate: 0 50%;
+  top: 30%;
+  /* translate: 0 50%; */
   transition: 1s ease;
 }
-.modal.hide{
-top:-50%;
-translate: 0 -90%;
+.modal.hide {
+  top: -50%;
+  translate: 0 -90%;
 }
 .modal > div {
   margin-top: 10px;
@@ -43,39 +43,41 @@ translate: 0 -90%;
   text-align: left;
   width: 100%;
 }
-.fa-close{
+.fa-close {
   color: white;
   align-self: flex-end;
   cursor: pointer;
   padding: 5px;
 }
 
-.fa-close:hover{
+.fa-close:hover {
   font-weight: bold;
   scale: 1.1;
 }
 
-
-
 .txt,
-select{
+select {
   display: block;
   font-family: sans-serif;
   font-size: 16px;
   padding: 5px;
 }
 
-select,button {
-  background-color:lightsalmon;
+select,
+button {
+  background-color: lightsalmon;
 }
-button,select{
-cursor: pointer;
+button,
+select {
+  cursor: pointer;
 }
-button:active,.fa-close:active{
-  scale: .95;
+button:active,
+.fa-close:active {
+  scale: 0.95;
 }
-button:hover,select:hover{
-  background-color: #e67549 ;
+button:hover,
+select:hover {
+  background-color: #e67549;
 }
 .txt,
 select,
@@ -90,7 +92,38 @@ button {
 
 padding: ;
 } */
-.txt{
+.txt {
   color: black;
   resize: none;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+ gap: 10px;
+  width: 80vw;
+  height: 80vh;
+}
+.gridItem {
+  
+  border: 1px solid white;
+}
+.gridItem img{
+height: 80%;
+width: 100%;
+border-radius: 5px;
+background-color: #797979;
+}
+.title {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  height: 20%;
+  vertical-align: middle;
+  line-height: 2.2em;
+  background-color: lightsalmon;
+}
+.shadow{
+  box-shadow: 0px 0px 25px 5px #e67549;
 }

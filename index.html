@@ -23,7 +23,57 @@
   <body>
     <h3>Speech Text Reader</h3>
     <button onclick="toggleTextBox()">Toggle Text Box</button>
-    <div class="modal">
+    <div class="gridContainer" id="gridContainer">
+      <div id="I'M THIRSTY" class="gridItem" onclick="speechThis(`I'M THIRSTY`)">
+          <img src="image/1.jpg" alt="">
+          <p class="title">I'M THIRSTY</p>
+      </div>
+      <div id="I'M HUNGRY" class="gridItem" onclick="speechThis(`I'M HUNGRY`)">
+          <img src="image/2.jpg" alt="">
+          <p class="title">I'M HUNGRY</p>
+      </div>
+      <div id="I'M TIRED" class="gridItem" onclick="speechThis(`I'M TIRED`)">
+          <img src="image/3.jpg" alt="">
+          <p class="title">I'M TIRED</p>
+      </div>
+      <div id="I'M HURT" class="gridItem" onclick="speechThis(`I'M HURT`)">
+          <img src="image/4.jpg" alt="">
+          <p class="title">I'M HURT</p>
+      </div>
+      <div id="I'M HAPPY" class="gridItem" onclick="speechThis(`I'M HAPPY`)">
+          <img src="image/5.jpg" alt="">
+          <p class="title">I'M HAPPY</p>
+      </div>
+      <div id="I'M ANGRY" class="gridItem" onclick="speechThis(`I'M ANGRY`)">
+          <img src="image/6.jpg" alt="">
+          <p class="title">I'M ANGRY</p>
+      </div>
+      <div id="I'M SAD" class="gridItem" onclick="speechThis(`I'M SAD`)">
+          <img src="image/7.jpg" alt="">
+          <p class="title">I'M SAD</p>
+      </div>
+      <div id="I'M SCARED" class="gridItem" onclick="speechThis(`I'M SCARED`)">
+          <img src="image/8.jpg" alt="">
+          <p class="title">I'M SCARED</p>
+      </div>
+      <div id="I WANT TO GO OUTSIDE" class="gridItem" onclick="speechThis(`I WANT TO GO OUTSIDE`)">
+          <img src="image/9.jpg" alt="">
+          <p class="title">I WANT TO GO OUTSIDE</p>
+      </div>
+      <div id="I WANT TO GO HOME" class="gridItem" onclick="speechThis(`I WANT TO GO HOME`)">
+          <img src="image/10.jpg" alt="">
+          <p class="title">I WANT TO GO HOME</p>
+      </div>
+      <div id="I WANT TO GO SCHOOL" class="gridItem" onclick="speechThis(`I WANT TO GO SCHOOL`)">
+          <img src="image/11.jpg" alt="">
+          <p class="title">I WANT TO GO SCHOOL</p>
+      </div>
+      <div id="I WANT TO GO GRANDMAS" class="gridItem" onclick="speechThis(`I WANT TO GO GRANDMAS`)">
+          <img src="image/12.jpg" alt="">
+          <p class="title">I WANT TO GO GRANDMAS</p>
+      </div>
+  </div>
+    <div class="modal hide">
       <i class="fa fa-close	" onclick="toggleTextBox()"></i>
       <div>Choose voice</div>
 
