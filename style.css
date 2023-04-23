@@ -106,11 +106,13 @@ padding: ;
   height: 80vh;
 }
 .gridItem {
-  
+  height:28vh;
   border: 1px solid white;
 }
 .gridItem img{
 height: 80%;
+object-fit: cover;
+
 width: 100%;
 border-radius: 5px;
 background-color: #797979;
